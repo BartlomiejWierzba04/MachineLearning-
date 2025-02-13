@@ -1,0 +1,8 @@
+# Save entire model (SavedModel format - recommended)
+model.save('model_v1/')  # Creates a directory
+
+# Alternative: HDF5 format
+model.save('model_v1.h5')
+
+# Load later
+loaded_model = tf.keras.models.load_model('model_v1/')
